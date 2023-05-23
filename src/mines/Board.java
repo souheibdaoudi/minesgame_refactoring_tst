@@ -45,7 +45,7 @@ public class Board extends JPanel
         this.statusbar = statusbar;
         this.img = new Image[13];
         for (int i = 0; i < 13; ++i) {
-            this.img[i] = new ImageIcon(this.getClass().getClassLoader().getResource(invokedynamic(makeConcatWithConstants:(I)Ljava/lang/String;, i))).getImage();
+            this.img[i] = new ImageIcon(this.getClass().getClassLoader()
         }
         this.setDoubleBuffered(true);
         this.addMouseListener((MouseListener)new Board.MinesAdapter(this));
